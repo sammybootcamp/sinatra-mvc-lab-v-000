@@ -22,7 +22,8 @@ class PigLatinizer
     # #split string into separate strings for each word
     # #collect array of piglatinized words
     # #join with a space betwen each word and make into string
-
+    
     phrase.split.collect{|word| piglatinize(word)}.join(" ")
   end
 end
+
